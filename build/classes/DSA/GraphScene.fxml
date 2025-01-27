@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="612.0" prefWidth="845.0" styleClass="image2" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DSA.graphController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="620.0" layoutX="-5.0" layoutY="-3.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" width="850.0" />
+      <Pane layoutX="-6.0" layoutY="-7.0" prefHeight="628.0" prefWidth="860.0">
+         <children>
+            <BarChart fx:id="BarChart" layoutX="-8.0" layoutY="3.0" prefHeight="549.0" prefWidth="850.0">
+              <xAxis>
+                <CategoryAxis side="BOTTOM" fx:id="xAxis" />
+              </xAxis>
+              <yAxis>
+                <NumberAxis fx:id="yAxis" side="LEFT" />
+              </yAxis>
+            </BarChart>
+            <Button fx:id="backButton" layoutX="24.0" layoutY="540.0" mnemonicParsing="false" onAction="#handleBackButton" prefHeight="47.0" prefWidth="81.0" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

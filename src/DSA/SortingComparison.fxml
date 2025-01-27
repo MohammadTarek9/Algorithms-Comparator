@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="645.0" prefWidth="865.0" styleClass="image2" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DSA.SortingComparisonController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="651.0" layoutX="-5.0" layoutY="-3.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" width="873.0" />
+      <Pane layoutX="-6.0" layoutY="-6.0" prefHeight="658.0" prefWidth="873.0">
+         <children>
+            <TextField fx:id="inputField" layoutX="24.0" layoutY="34.0" prefHeight="62.0" prefWidth="391.0" promptText="Input Numbers">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+            </TextField>
+            <TextArea fx:id="outputArea" layoutX="24.0" layoutY="125.0" prefHeight="399.0" prefWidth="527.0" promptText="Results" styleClass="text-field">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+            </TextArea>
+            <Button fx:id="clearButton" layoutX="117.0" layoutY="564.0" mnemonicParsing="false" onAction="#handleClearOutput" prefHeight="54.0" prefWidth="84.0" text="Clear" />
+            <Button fx:id="compareButton" layoutX="683.0" layoutY="564.0" mnemonicParsing="false" onAction="#handleCompareSorts" prefHeight="54.0" prefWidth="84.0" text="Start">
+               <font>
+                  <Font name="Georgia" size="16.0" />
+               </font>
+            </Button>
+            <VBox layoutX="626.0" layoutY="53.0" prefHeight="433.0" prefWidth="211.0">
+               <children>
+                  <CheckBox fx:id="bubbleSortCheckBox" mnemonicParsing="false" prefHeight="45.0" prefWidth="155.0" text="Bubble Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="mergeSortCheckBox" mnemonicParsing="false" prefHeight="43.0" prefWidth="123.0" text="Merge Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="treeSortCheckBox" mnemonicParsing="false" prefHeight="38.0" prefWidth="124.0" text="Tree Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="quickSortCheckBox" mnemonicParsing="false" prefHeight="46.0" prefWidth="174.0" text="Quick Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="selectionSortCheckBox" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" text="Selection Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="countingSortCheckBox" mnemonicParsing="false" prefHeight="46.0" prefWidth="184.0" text="Counting Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="shellSortCheckBox" mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" text="Shell Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="heapSortCheckBox" mnemonicParsing="false" prefHeight="45.0" prefWidth="138.0" text="Heap Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+                  <CheckBox fx:id="insertionSortCheckBox" mnemonicParsing="false" prefHeight="46.0" prefWidth="181.0" text="Insertion Sort">
+                     <font>
+                        <Font name="Georgia" size="18.0" />
+                     </font>
+                  </CheckBox>
+               </children>
+            </VBox>
+            <Label layoutX="616.0" layoutY="24.0" prefHeight="21.0" prefWidth="179.0" text="Select Algorithms">
+               <font>
+                  <Font name="Georgia Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="showGraphButton" layoutX="683.0" layoutY="497.0" mnemonicParsing="false" onAction="#showGraphScene" prefHeight="54.0" prefWidth="84.0" text="Graph" />
+            <Button fx:id="clearButton1" layoutX="24.0" layoutY="564.0" mnemonicParsing="false" onAction="#switchToFirstScene" prefHeight="54.0" prefWidth="84.0" text="Back" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

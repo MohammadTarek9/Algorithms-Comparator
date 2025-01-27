@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane prefHeight="642.0" prefWidth="865.0" styleClass="image2" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DSA.Graph2Controller">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="642.0" layoutX="-7.0" opacity="0.56" stroke="BLACK" strokeType="INSIDE" styleClass="rectangle" width="880.0" />
+      <LineChart fx:id="lineChart" layoutX="-4.0" prefHeight="608.0" prefWidth="866.0">
+         <xAxis>
+            <CategoryAxis fx:id="xAxis" />
+         </xAxis>
+         <yAxis>
+            <NumberAxis fx:id="yAxis" />
+         </yAxis>
+      </LineChart>
+      <Button fx:id="backButton" layoutX="22.0" layoutY="592.0" mnemonicParsing="false" onAction="#switchToFirstScene" prefHeight="47.0" prefWidth="81.0" text="Back" />
+   </children>
+</AnchorPane>
